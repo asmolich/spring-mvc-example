@@ -1,0 +1,325 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	/* 	min-width: 1000px; */
+	/* 	min-height: 585px; */
+	overflow: hidden;
+	background: url("../images/bg_.png");
+	background-repeat: repeat-x repeat-y;
+	background-color: #2fb0f5;
+}
+
+a {
+	color: #369;
+}
+
+a:hover {
+	color: #fff;
+	background: #369;
+	text-decoration: none;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	padding-top: .5em;
+}
+
+p {
+	margin: 0;
+	padding: .4em .25em .8em 0;
+}
+
+/* column container */
+.colmask {
+	position: relative; /* This fixes the IE7 overflow hidden bug */
+	clear: both;
+	float: left;
+	width: 100%; /* width of whole page */
+	overflow: hidden; /* This chops off any overhanging divs */
+}
+
+.colright,.colmid,.colleft {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.col1,.col2,.col3 {
+	float: left;
+	position: relative;
+	padding: 0 0 1em 0;
+	overflow: hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	
+}
+
+.leftmenu .colleft {
+	right: 50%;
+}
+
+.leftmenu .col1 {
+	width: 46%;
+	left: 102%;
+}
+
+.leftmenu .col2 {
+	width: 46%;
+	left: 6%;
+}
+
+.box_rotate {
+	-moz-transform: rotate(270deg); /* FF3.5+ */
+	-o-transform: rotate(270deg); /* Opera 10.5 */
+	-webkit-transform: rotate(270deg); /* Saf3.1+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3 );
+	/* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+	/* IE8 */
+	filter: flipv() fliph(); /*IE9*/
+	writing-mode: tb-rl;
+}
+
+#logo {
+	padding-top: 7%;
+}
+
+#logo img {
+	width: 50%;
+}
+
+#text_main {
+	font-family: "Lazy Crazy", arial, sans-serif;
+	color: #FFF;
+	font-size: 1.5em;
+	/* 	font-weight: bold; */
+	line-height: 1.3;
+}
+
+#text_main,#text_soon,#logo {
+	margin-left: 35%;
+}
+
+#text_main h2 {
+	color: #1251A4;
+	font-size: 1.6em;
+}
+
+#text_soon {
+	font-family: "Lazy Crazy", arial, sans-serif;
+	color: #FFF;
+	font-size: 1em;
+	/* 	font-weight: bold; */
+	line-height: 1.0;
+}
+
+#text_soon h2 {
+	color: #27AAE1;
+	font-size: 1.4em;
+	/* 	font-family: arial; */
+}
+
+#screenshot {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	z-index: 888;
+	width: 20%;
+}
+
+#screenshot img {
+	width: 100%;
+}
+
+#main_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#bottom_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 24%;
+	background: url("../images/bottom_.png");
+	background-repeat: repeat-x;
+	background-color: blue;
+}
+
+#langs {
+	margin-left: 45%;
+}
+
+#langs ul,#langs ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+#langs ul a,#langs ul a:hover,#langs ol a,#langs ol a:hover {
+	background: none;
+	text-decoration: none;
+	border: none;
+}
+
+#langs ul {
+	padding-top: 15px;
+}
+
+#langs ul li {
+	display: inline;
+	padding-left: 15px;
+}
+
+#langs ul img {
+	width: 30px;
+	height: 30px;
+}
+
+#appstore,#social {
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 25%;
+}
+
+#appstore {
+	margin-top: 10%;
+}
+
+#appstore img {
+	width: 40%;
+	margin: 1%;
+}
+
+#social a,#social a:hover {
+	background: none;
+	text-decoration: none;
+}
+
+#social img {
+	width: 13%;
+	margin: 1%;
+}
+
+a#blog {
+	float: right;
+	padding-right: 1%;
+}
+
+.hide {
+	left: 100%;
+}
+
+.feedback {
+	top: 30%;
+	position: absolute;
+	vertical-align: middle;
+	right: 0;
+	z-index: 999;
+	background-color: #3fc0ff;
+	color: #FFF;
+	padding: 30px;
+	font-family: "Lazy Crazy", arial, sans-serif;
+	font-size: 1.2em;
+	border-color: #FFF;
+	border-style: solid;
+	border-width: 1px 0 1px 1px;
+	border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	-khtml-border-radius: 6px 0 0 6px;
+}
+
+.feedback table tr td {
+	text-align: right;
+	vertical-align: top;
+	padding: 3px;
+}
+
+.feedback label {
+	padding-right: 5px;
+}
+
+.feedback input[type="text"] {
+	width: 300px;
+}
+
+.feedback textarea {
+	width: 298px;
+	height: 120px;
+}
+
+.feedback input[type="submit"] {
+	font-family: "Lazy Crazy", arial, sans-serif;
+	/* 	font-weight: bold; */
+	font-size: 23px;
+	color: #FFF;
+	background-color: #003399;
+	border-color: #003399;
+	border-width: 1px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#feedback_button {
+	position: absolute;
+	top: 40%;
+	right: -36px;
+	/* 	width: 120px; */
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	vertical-align: middle;
+	/* 	font: 1.2em bold arial; */
+	font: 1.2em normal arial;
+	cursor: pointer;
+	background-color: red;
+	color: #FFF;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-khtml-border-radius: 5px 5px 0 0;
+	z-index: 999;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #FFF;
+	font-family: arial;
+	font-size: 0.6em;
+	padding: 0 1% .6% 0;
+}
+
+/* IE9 Hack */
+:root #feedback_button {
+	padding: 20px 10px 20px 10px\9;
+	right: 0\9;
+	border-radius: 0 5px 5px 0\9;
+}
+
+/* Opera Hack */
+@media all and (-webkit-min-device-pixel-ratio:10000) ,
+not all and (-webkit-min-device-pixel-ratio:0) {
+	#feedback_button {right: -45px;}
+}
+
+/* FF Hack */
+@-moz-document url-prefix() { 
+	#feedback_button {right: -45px;}
+}
